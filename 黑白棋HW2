@@ -1,4 +1,7 @@
 #include<stdio.h>／／缺方向
+#define white 2
+#include black 1
+#include empty 0
 int main() {
     int i,j;
     int chess[8][8]={};//輸入
@@ -14,19 +17,19 @@ int main() {
 
         }
     }
-    if(chess[j][i]==1){
+    if(chess[j][i]==black){
 
 
     }
 
-    if(chess[j][i]==0){／／判斷位子情形
+    if(chess[j][i]==empty){／／判斷位子情形
         printf("這個位子沒有棋子");
 
     }
-    if(chess[j][i]==1){
+    if(chess[j][i]==black){
         printf("這個位子是黑棋");
     }
-    if(chess[j][i]==2){
+    if(chess[j][i]==white){
         printf("這個位子是白棋");
     }
 
