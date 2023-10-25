@@ -1,46 +1,25 @@
 #include<stdio.h>／／缺方向
 int main() {
     int i,j;
-    int chess[8][8]={};
+    int chess[8][8]={};//輸入
     for(int _a=0; _a<8 ; _a++){
         for(int _b=0; _b<8 ; _b++){
             scanf("%d",&chess[a][b]);
         }
     }
-    scanf("%d %d",&i,&j);
-    int color=chess[j][i];
-    for(){
+    scanf("%d %d %d",&i,&j,&color);
+    for(int x=0;x<8;x++){
+        for(int y=0;y<8;y++){
+            
 
+        }
     }
-
-
-    
-    
-    
     if(chess[j][i]==1){
 
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    if(chess[j][i]==0){
+    if(chess[j][i]==0){／／判斷位子情形
         printf("這個位子沒有棋子");
 
     }
@@ -50,13 +29,6 @@ int main() {
     if(chess[j][i]==2){
         printf("這個位子是白棋");
     }
-    int color=chess[j][i];
 
-
-    for(int x=0;x<8;x++){
-        for(int y=0;y<8;y++){
-            
-
-        }
-    }
+    
 }
