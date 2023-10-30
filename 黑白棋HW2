@@ -16,7 +16,6 @@ int main() {
         printf("這個位子沒有棋子");
     if(chess[x][y]==1)
         printf("這個位子是黑棋");
-    
     if(chess[x][y]==2)
         printf("這個位子是白棋");
 
