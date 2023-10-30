@@ -19,7 +19,6 @@ int main() {
     if(chess[x][y]==2)
         printf("這個位子是白棋");
 
-
 //--------------------------------------------------        
     chess[x][y]=color;
     for(int i=2;i<8;i++){
@@ -28,9 +27,8 @@ int main() {
                 int _x=x+i*dx;
                 int _y=y=i*dy;
                 if(_x>=0 && _x<=7 && _y>0 && _y<=7){
-                    if(chess[_x][_y]==chess[x][y])
+                    if(chess[_x][_y]==chess[x][y] || chess[_x][_y]==0)
                         break;
-                    else if(chess[_x][_y]==0)
                 }
             }
         }
