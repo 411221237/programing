@@ -12,12 +12,12 @@ int main() {
     {0,0,0,0,0,0,0,0}};
 //--------------------------------------------------   
     scanf("%d %d %d",&x,&y,&color);
-    if(chess[j][i]==0)
+    if(chess[x][y]==0)
         printf("這個位子沒有棋子");
-    if(chess[j][i]==1)
+    if(chess[x][y]==1)
         printf("這個位子是黑棋");
     
-    if(chess[j][i]==2)
+    if(chess[x][y]==2)
         printf("這個位子是白棋");
 
 
