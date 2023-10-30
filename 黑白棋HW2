@@ -1,37 +1,40 @@
-#include<stdio.h>／／缺方向
-#define white 2
-#include black 1
-#include empty 0
+#include<stdio.h>
 int main() {
-    int i,j;
-    int chess[8][8]={};//輸入
-    for(int _a=0; _a<8 ; _a++){
-        for(int _b=0; _b<8 ; _b++){
-            scanf("%d",&chess[a][b]);
-        }
-    }
-    scanf("%d %d %d",&i,&j,&color);
-    for(int x=0;x<8;x++){
-        for(int y=0;y<8;y++){
-            
-
-        }
-    }
-    if(chess[j][i]==black){
-
-
-    }
-
-    if(chess[j][i]==empty){／／判斷位子情形
+    int x,y,color,dx,dy;
+    int chess[8][8]={
+    {0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0},
+    {0,0,0,1,2,0,0,0},
+    {0,0,0,2,1,0,0,0},
+    {0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0}};
+//--------------------------------------------------   
+    scanf("%d %d %d",&x,&y,&color);
+    if(chess[j][i]==0)
         printf("這個位子沒有棋子");
-
-    }
-    if(chess[j][i]==black){
+    if(chess[j][i]==1)
         printf("這個位子是黑棋");
-    }
-    if(chess[j][i]==white){
+    
+    if(chess[j][i]==2)
         printf("這個位子是白棋");
+
+
+//--------------------------------------------------        
+    chess[x][y]=color;
+    for(int i=2;i<8;i++){
+        for(dx=-1;dx<=1;dx++){
+            for(dy=-1;dy<=1;dy++){
+                int _x=x+i*dx;
+                int _y=y=i*dy;
+                if(_x>=0 && _x<=7 && _y>0 && _y<=7){
+                    if(chess[_x][_y]==chess[x][y])
+                        break;
+                    else if(chess[_x][_y]==0)
+                }
+            }
+        }
     }
 
-    
 }
